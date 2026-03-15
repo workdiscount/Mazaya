@@ -1,1 +1,17 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mazaya dashboard</title>
+</head>
+<body>
+  <script>
+  const url='https://raw.githubusercontent.com/workdiscount/Mazaya/6a0e99e9236f43e4e0c6363063deda9c620ba698/mazaya-dashboard.html';
+  fetch(url)
+    .then(r => r.text())
+    .then(html => { document.open(); document.write(html); document.close(); })
+    .catch(err => { document.body.innerHTML='<p>Failed to load dashboard. Please try again later.</p>'; });
+  </script>
+</body>
+</html>
